@@ -23,7 +23,7 @@
   <tbody>
     <% @tweets.each do |tweet| %>
       <tr>
-        <td><%= tweet.user.id %></td>
+        <td><%= tweet.ver_hashtag %></td>
         <td><%= tweet.content %></td>
         <td><%= image_tag tweet.user.photo,height:100,width:100 %></td>
         <td><%= tweet.likes.count %></td>
