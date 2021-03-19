@@ -14,7 +14,7 @@ class LikesController < ApplicationController
     def destroy
       @like = Like.find params[:id] 
         @like.destroy
-        respond_to do |format|
+          respond_to do |format|
           format.html { redirect_to tweets_url, notice: "like was successfully destroyed." }
           format.json { head :no_content }
         end
